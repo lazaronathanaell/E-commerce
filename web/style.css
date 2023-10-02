@@ -1,0 +1,233 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 de set. de 2023, 23:42:26
+    Author     : Lazara Natanael da Silva
+*/
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0);
+
+.body{
+    width: 100%;
+}
+
+.new-products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 94.46%;
+    background: antiquewhite;
+    margin-left: 2.77%;
+    margin-right: 2.77%;
+    box-sizing: border-box;
+}
+.category-name{
+    width: 100%;
+    text-align: center;
+}
+.img-publi,.img-sport,.img-sport-r, .img-sport-l{
+    width: 100%;
+    margin-top: 1.388%;
+    margin-bottom: 1.388%;
+    background: #0bf;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.products, .description-price,.products-sport{
+    width: 100%;
+    height: 320px;
+    display: flex;
+}
+.description-price{
+    height: 132px;
+}
+.product, .product-l, .product-r{
+    width: 31.48%;
+    background: #0bf;
+    max-width: 427px;
+    margin: 1.388%;
+    border-radius: 10px;
+}
+.product-l{
+    margin-left: 0%;
+}
+.product-r{
+    margin-right: 0%;
+}
+.img-sport-r, .img-sport-l{
+    background: #0bf;
+    width: 37.202%;
+    height: 640px;
+    margin-right: 1.388%;
+}
+.img-sport-l{
+    margin-right: 0%;
+    margin-left: 1.388%;
+}
+.products-sport-l, .products-sport-r{
+    display: flex;
+    width: 60%;
+    height: 640px;
+    margin-top: 1.388%;
+    margin-bottom: 1.388%;
+    margin-left: 1.388%;
+    flex-wrap: wrap;
+}
+.products-sport-r{
+    margin-left: 0%;
+    margin-right: 1.388%;
+}
+#product-1, #product-2{
+    margin-bottom: 1.388%;
+}
+#product-3, #product-4{
+    margin-top: 1.388%;
+}
+.sport{
+    height: 48.615%;
+    margin-top: 0%;
+    margin-bottom:0%;
+    width: 48.61%;
+}
+
+/*Estiliza o header*/
+header{
+    width: 100%;
+    font-size: 2rem;
+    padding-left: 3.50%;
+    padding-right: 3.50%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+/*Estilizando os textos da navbar*/
+.link-header{
+    margin: 0%;
+    text-align: end;
+    
+}
+
+.sub-reader{
+    min-width: 350px;
+    max-width: 300px;
+    justify-content: space-between;
+    width: 22%;
+    display: flex;
+}
+/*Serve pra estilizar os inputs das telas de cadastros e de login*/
+.cadastro, .nome,.dadospessoais, .login{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.form-dadospessoais{
+    width: 31.3%;
+}
+
+.endereco{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-nome, .form-credencial{
+    width: 100%;
+}
+
+.form-endereco{
+    width: 56%;
+}
+
+.form-numero{
+    width: 16%;
+}
+.form-cep, .form-complemto{
+    width: 22%;
+}
+
+.cidade-uf{
+    width: 35%;
+    margin-left: auto;
+}
+
+input{
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-color: 1px #333;
+    margin:5px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-left: 10px;
+}
+/*Estilizando o texto de esqueceu a senha?*/
+.esqueci{
+    width: 100%;
+    text-align: end;
+    font-size: 0.6rem;
+}
+/*Estilizando o botão de entrar*/
+.enter{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+/* Estilizando o campo de entrada de data */
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  /* Personalizando as cores dos elementos de data */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+  
+  /* Personalizando a seta de rolagem (apenas no Chrome) */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+.botton-search{
+    width: 38%;
+    margin-left: 7%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.search{
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+.material-symbols-outlined {
+    font-size: 2.5rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+}
+
