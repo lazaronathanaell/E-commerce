@@ -1,12 +1,13 @@
-package usuario.modelo;
+package produto.modelo;
+
 
 /**
  *
  * @author Lazaro Natanael
  * 
- * Classe que representa a entidade usuário
+ * Classe que representa a entidade produto
  */
-public class Usuario {
+public class produto {
     
     private int id;
     private String name;

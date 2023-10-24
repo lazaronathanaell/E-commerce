@@ -10,7 +10,7 @@ import usuario.modelo.UsuarioDAO;
 
 /**
  *
- * @author Leonardo Oliveira Moreira
+ * @author Lazaro Natanael
  *
  * Classe que representa a ação de inserir um novo cliente
  */
@@ -19,15 +19,24 @@ public class InserirClienteServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nome = request.getParameter("nome");
-        String endereco = request.getParameter("endereco");
+        request.setCharacterEncoding("UTF-8");
+        String name = request.getParameter("name");
+        String user_name = request.getParameter("user-name");
         String email = request.getParameter("email");
-        String login = request.getParameter("login");
-        String senha = request.getParameter("senha");
+        String password = request.getParameter("password");
+        String tel = request.getParameter("tel");
+        String cpf_cnpj = request.getParameter("cpf-cnpj");
+        String dt_birth = request.getParameter("date-of-birth");
+        String street = request.getParameter("street");
+        String house_number = request.getParameter("house-number");
+        String district = request.getParameter("district");
+        String city = request.getParameter("city");
+        String state = request.getParameter("state");
+        String cep = request.getParameter("cep");
 
         UsuarioDAO usuarioDAO = new UsuarioDAO();
-        boolean sucesso = usuarioDAO.inserirCliente(nome, endereco, email, login, senha);
-
+        boolean sucesso = usuarioDAO.inserirCliente(name, user_name, email, password, tel, cpf_cnpj, dt_birth, street, house_number, district, city, state, cep);
+        System.out.println(sucesso);
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             if (sucesso) {
