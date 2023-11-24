@@ -1,18 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package categoria.modelo;
 
 /**
  *
- * @author Lazaro
+ * @author Leonardo Oliveira Moreira
  * 
- * Class que representa a entidade categória
+ * Classe que representa a entidade categoria
  */
 public class Categoria {
+    
     private int id;
-    private String descricao;
+    private String nome;
 
     public int getId() {
         return id;
@@ -22,13 +19,12 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getNome() {
+        return nome;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    
     
 }

@@ -1,82 +1,41 @@
 <%-- 
     Document   : index
-    Created on : 24 de set de 2023, 14:52:02
-    Author     : Lazaro Natanael
+    Created on : 1 de set de 2023, 14:52:02
+    Author     : Leonardo Oliveira Moreira
 --%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="carrinhocompras.modelo.CarrinhoCompras"%>
+<%@page import="carrinhocompras.modelo.CarrinhoCompraItem"%>
+<%@page import="produto.modelo.Produto"%>
+<%@page import="java.util.List"%>
 
-<body>
-    <header>
-        <label for="marca">Marca</label>
-        <div class="sub-reader">
-            <a class="link-header" href="credenciar.jsp" onclick="alternarFormulario()">Junte-se a nós</a>
-        </div>
-    </header>
-    <div class="new-products">
-        <div class="category-name">
-            <h1>lançamento Chuyn</h1>
-            <div class="img-publi"></div>
-        </div>
-        <div class="products">
-            <div class="product-l"></div>
-            <div class="product"></div>
-            <div class="product-r"></div>
-        </div>
-    </div>
-    <div class="new-products">
-        <div class="category-name">
-            <h1>Descontos imperdiveis</h1>
-        </div>
-        <div class="products">
-            <div class="product-l"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product-r"></div>
-        </div>
-        <div class="description-price">
-            <div class="product-l"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product-r"></div>
-        </div>
-    </div>
-    <div class="new-products">
-        <div class="category-name">
-            <h1>Descontos imperdiveis</h1>
-            
-        </div>
-        <div class="img-sport-r"></div>
-        <div class="products-sport-l">
-            <div class="product-l sport" id="product-1"></div>
-            <div class="product-r sport" id="product-2"></div>
-            <div class="product-l sport" id="product-3"></div>
-            <div class="product-r sport" id="product-4"></div>
-        </div>
-    </div>
-    <div class="new-products">
-        <div class="category-name">
-            <h1>Descontos imperdiveis</h1>
-            
-        </div>
-        
-        <div class="products-sport-r">
-            <div class="product-l sport" id="product-1"></div>
-            <div class="product-r sport" id="product-2"></div>
-            <div class="product-l sport" id="product-3"></div>
-            <div class="product-r sport" id="product-4"></div>
-        </div>
-        <div class="img-sport-l"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+<%@include file="cabecalho.jsp" %>
 
-</html>
+<%    List<Produto> produtos = (List<Produto>) request.getAttribute("produtosEmEstoque");
+    if (produtos != null && !produtos.isEmpty()) {
+%>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <%
+        for (int i = 0; i < produtos.size(); i++) {
+            Produto p = produtos.get(i);
+    %>
+    <div class="products">
+        <div class="product">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><%= p.getDescricao()%></h5>
+                <p class="card-text"><%= p.getDescricao()%></p>
+            </div>
+            <div class="card-button">
+                <a href="AdicionarProdutoCarrinho?produtoId=<%= p.getId()%>" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <%
+        }
+}
+    %>
+</div>
+<%@include file="rodape.jsp" %>
+

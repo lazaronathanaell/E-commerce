@@ -2,7 +2,7 @@ package config;
 
 /**
  *
- * @author Lazaro Natanael
+ * @author Leonardo Oliveira Moreira
  * 
  * Classe que encapsula as configurações da aplicação
  */
