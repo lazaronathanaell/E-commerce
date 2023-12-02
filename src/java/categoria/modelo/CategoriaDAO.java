@@ -78,6 +78,7 @@ public class CategoriaDAO {
     /**
      * Método utilizado para listar todas as categorias
      *
+     * @param nome
      * @return
      */
     public List<Categoria> listar(String nome) {
@@ -111,6 +112,7 @@ public class CategoriaDAO {
     /**
      * Método utilizado para listar uma categoria existente
      *
+     * @param id
      * @return
      */
     public Categoria listar(int id) {

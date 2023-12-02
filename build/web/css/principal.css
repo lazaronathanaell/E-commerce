@@ -96,7 +96,9 @@ a{
     width: 80px;
     margin-right: 0.5rem;
 }
-
+.row{
+    margin: 50px;
+}
 .sub-reader{
     min-width: 350px;
     max-width: 300px;
@@ -107,4 +109,11 @@ a{
 
 .link-credenciar{
     margin: 10px;
+}
+
+shopping_cart{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }

@@ -12,7 +12,20 @@
         <title>smdecommerce</title>
     </head>
     <body>
+        <%
+            if (request.getAttribute("mensagem") != null) {
+        %>
+        <%= request.getAttribute("mensagem") %>
+        <%
+            }
+        %>
         <h1>Área Administrativa</h1>
-        <a href="">Cadastro de Produtos</a> | <a href="${pageContext.request.contextPath}/admin/ListarCategoria">Cadastro de Categorias</a> | <a href="${pageContext.request.contextPath}/Logout">Sair</a>
+        <a href="UploadProdutoFotoForm">Upload de Foto de Produto</a> 
+        <br/> 
+        <a href="${pageContext.request.contextPath}/admin/ListarCategoria">Cadastro de Categorias</a>
+        <br/>
+        <a href="${pageContext.request.contextPath}/admin/ListarProduto">Cadastro de Produto</a>
+        <br/>
+        <a href="${pageContext.request.contextPath}/Logout">Sair</a>
     </body>
 </html>

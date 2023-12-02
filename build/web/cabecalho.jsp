@@ -27,23 +27,21 @@
             Usuario usuario = (Usuario) session.getAttribute("usuario");
             if (usuario != null && usuario instanceof Usuario) {
             %>
-                <form class="d-flex" action="${pageContext.request.contextPath}/Logout" method="get">
-                <input class="form-control me-2" type="text" readonly disabled value="Olá, <%= usuario.getNome() %>!">
-                <a href="">
-                    <span class="material-symbols-outlined">shopping_cart</span></a>
+                <form class="d-flex" action="${pageContext.request.contextPath}/Logout" method="post">
+                    <a class="link-credenciar" href="${pageContext.request.contextPath}/Perfil">Olá, <%= usuario.getNome() %></a>
+               <a href="${pageContext.request.contextPath}/Carrinho" class="material-symbols-outlined">
+                        shopping_cart</a>
                 <button class="btn btn-outline-danger" type="submit">Sair</button>
                 </form>
             <% 
             } else {
             %>
                 
-                <a class="link-credenciar" href="${pageContext.request.contextPath}/Logar">Entrar</a>
+                <a class="link-credenciar" href="${pageContext.request.contextPath}/Entrar">Entrar</a>
                 
-                <a class="link-credenciar" href="${pageContext.request.contextPath}/Cadastrar">
+                <a class="link-credenciar" href="${pageContext.request.contextPath}/NovoCliente">
                     Junte-se conosco</a>
-                    <a href="${pageContext.request.contextPath}/CarrinhoDeCompras">
-                        <span class="material-symbols-outlined">shopping_cart</span>
-                    </a>
+                    
                 
             
             <% 
@@ -64,3 +62,5 @@
             %>
             </header>
             
+
+

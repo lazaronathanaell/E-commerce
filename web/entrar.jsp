@@ -12,7 +12,7 @@
                     <label for="password" class="input-group_label">Senha</label>
                 </div>
             </div>
-        <button type="submit">Sign in</button>
+            <button type="submit">Sign in</button>
         </form>
    
 <%@include file="rodape.jsp" %>

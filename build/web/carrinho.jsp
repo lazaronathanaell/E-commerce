@@ -9,7 +9,6 @@
 <%@page import="carrinhocompras.modelo.CarrinhoCompraItem"%>
 <%@page import="produto.modelo.Produto"%>
 <%@page import="java.util.List"%>
-
 <%@include file="cabecalho.jsp" %>
 
 <%
@@ -62,7 +61,12 @@
     </tbody>
 </table>
 <h4>Total R$: <%= realFormat.format(total) %></h4>
+<% 
+        if (usuario != null && usuario instanceof Usuario && !usuario.isAdministrador()) {
+%>
+<a href="VendaInserir" class="btn btn-primary" role="button" aria-disabled="true">Finalizar Compra</a>
 <%
+        }    
     } else {
 %>
 <div class="alert alert-info alert-dismissible fade show mt-4" role="alert">

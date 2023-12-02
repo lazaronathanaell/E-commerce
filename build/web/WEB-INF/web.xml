@@ -57,16 +57,80 @@
         <servlet-class>carrinhocompras.controle.RemoverProdutoCarrinhoServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>NovoClientePage</servlet-name>
-        <servlet-class>cliente.controle.NovoClientePage</servlet-class>
+        <servlet-name>UploadProdutoFotoServlet</servlet-name>
+        <servlet-class>produto.controle.UploadProdutoFotoServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>EntrarServeltPage</servlet-name>
-        <servlet-class>cliente.controle.EntrarServeltPage</servlet-class>
+        <servlet-name>ExibirProdutoFotoServlet</servlet-name>
+        <servlet-class>produto.controle.ExibirProdutoFotoServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CarrinhoServletPage</servlet-name>
-        <servlet-class>carrinhocompras.controle.CarrinhoServletPage</servlet-class>
+        <servlet-name>UploadProdutoFotoFormServlet</servlet-name>
+        <servlet-class>produto.controle.UploadProdutoFotoFormServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VendaInserirServlet</servlet-name>
+        <servlet-class>venda.controle.VendaInserirServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RelatorioProdutosFaltandoServlet</servlet-name>
+        <servlet-class>relatorios.RelatorioProdutosFaltandoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarrinhoServlet</servlet-name>
+        <servlet-class>carrinhocompras.controle.CarrinhoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarDadosServlet</servlet-name>
+        <servlet-class>cliente.controle.AtualizarDadosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EntrarServlet</servlet-name>
+        <servlet-class>cliente.controle.EntrarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcluirCadastroServlet</servlet-name>
+        <servlet-class>cliente.controle.ExcluirCadastroServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NovoClienteServlet</servlet-name>
+        <servlet-class>cliente.controle.NovoClienteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PerfilServlet</servlet-name>
+        <servlet-class>cliente.controle.PerfilServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.AtualizarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastroProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.CadastroProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExcluirProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.ExcluirProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListarProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.ListarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MostrarProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.MostrarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NovoProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.NovoProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BuscarProdutoServlet</servlet-name>
+        <servlet-class>produto.controle.BuscarProdutoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AtualizarCadastroServlet</servlet-name>
+        <servlet-class>cliente.controle.AtualizarCadastroServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>InicioServlet</servlet-name>
@@ -117,16 +181,80 @@
         <url-pattern>/RemoverProdutoCarrinho</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>NovoClientePage</servlet-name>
-        <url-pattern>/Cadastrar</url-pattern>
+        <servlet-name>UploadProdutoFotoServlet</servlet-name>
+        <url-pattern>/admin/UploadProdutoFoto</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>EntrarServeltPage</servlet-name>
-        <url-pattern>/Logar</url-pattern>
+        <servlet-name>ExibirProdutoFotoServlet</servlet-name>
+        <url-pattern>/ExibirProdutoFoto</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CarrinhoServletPage</servlet-name>
-        <url-pattern>/CarrinhoDeCompras</url-pattern>
+        <servlet-name>UploadProdutoFotoFormServlet</servlet-name>
+        <url-pattern>/UploadProdutoFotoForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VendaInserirServlet</servlet-name>
+        <url-pattern>/VendaInserir</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RelatorioProdutosFaltandoServlet</servlet-name>
+        <url-pattern>/admin/RelatorioProdutosFaltando</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarrinhoServlet</servlet-name>
+        <url-pattern>/Carrinho</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarDadosServlet</servlet-name>
+        <url-pattern>/AtualizarDados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EntrarServlet</servlet-name>
+        <url-pattern>/Entrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirCadastroServlet</servlet-name>
+        <url-pattern>/ExcluirCadastro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NovoClienteServlet</servlet-name>
+        <url-pattern>/NovoCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PerfilServlet</servlet-name>
+        <url-pattern>/Perfil</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarProdutoServlet</servlet-name>
+        <url-pattern>/admin/AtualizarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastroProdutoServlet</servlet-name>
+        <url-pattern>/admin/CadastroProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExcluirProdutoServlet</servlet-name>
+        <url-pattern>/admin/ExcluirProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListarProdutoServlet</servlet-name>
+        <url-pattern>/admin/ListarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MostrarProdutoServlet</servlet-name>
+        <url-pattern>/admin/MostrarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NovoProdutoServlet</servlet-name>
+        <url-pattern>/admin/NovoProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscarProdutoServlet</servlet-name>
+        <url-pattern>/admin/BuscarProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AtualizarCadastroServlet</servlet-name>
+        <url-pattern>/AtualizarCadastro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

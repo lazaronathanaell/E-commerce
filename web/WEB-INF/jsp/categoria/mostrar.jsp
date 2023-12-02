@@ -15,7 +15,7 @@
     <body>
         <h1>Atualizar categoria</h1>
         <% Categoria c = (Categoria) request.getAttribute("categoria"); %>
-        <form action="AtualizarCategoria">
+        <form action="AtualizarCategoria" method="post">
             <input type="hidden" name="id" value="<%= c.getId() %>" />
             Nome: <input type="text" name="nome" value="<%= c.getNome() %>" />
             <br/>

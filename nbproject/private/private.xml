@@ -3,14 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/web/cabecalho.jsp</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/src/java/acesso/controle/LoginServlet.java</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/src/java/carrinhocompras/controle/CarrinhoServletPage.java</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/src/java/cliente/controle/NovoClientePage.java</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/src/java/usuario/modelo/UsuarioDAO.java</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/web/carrinho.jsp</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/web/index.jsp</file>
-            <file>file:/C:/Users/lazar/Downloads/smdecommerce_v6/smdecommerce/web/entrar.jsp</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/src/java/usuario/modelo/UsuarioDAO.java</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/src/java/cliente/controle/AtualizarDadosServlet.java</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/web/perfil.jsp</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/src/java/cliente/controle/AtualizarCadastroServlet.java</file>
+            <file>file:/C:/Users/aluno/Desktop/prog_web/smdecommerce/web/alterarCadastro.jsp</file>
         </group>
     </open-files>
 </project-private>

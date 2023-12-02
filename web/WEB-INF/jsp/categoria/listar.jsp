@@ -15,7 +15,7 @@
     </head>
     <body>
         <h1>Categorias</h1>
-        <form action="ListarCategoria">
+        <form action="BuscarProduto" method="post">
             Nome: <input type="text" name="nome" />
             <br/>
             <input type="submit" value="Buscar" />

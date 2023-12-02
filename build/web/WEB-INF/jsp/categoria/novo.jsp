@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Nova categoria</h1>
-        <form action="InserirCategoria">
+        <form action="InserirCategoria" method="post">
             Nome: <input type="text" name="nome" />
             <br/>
             <input type="submit" value="Cadastrar" />

@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author lazar
+ * @author Lazaro Natanael
  */
-public class CarrinhoServletPage extends HttpServlet {
+public class CarrinhoServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {

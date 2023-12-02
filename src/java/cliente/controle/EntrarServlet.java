@@ -14,16 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author lazar
+ * @author Lazaro Natanael
  */
-public class NovoClientePage extends HttpServlet {
+public class EntrarServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
          
-        RequestDispatcher dispatcher = req.getRequestDispatcher("novoCliente.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("entrar.jsp");
         dispatcher.forward( req, resp);
     }
-    
 }

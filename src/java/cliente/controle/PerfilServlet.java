@@ -14,17 +14,15 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author lazar
+ * @author Lazaro Natanael
  */
-public class EntrarServeltPage extends HttpServlet {
+public class PerfilServlet extends HttpServlet {
 
-     @Override
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
             throws ServletException, IOException {
          
-        RequestDispatcher dispatcher = req.getRequestDispatcher("entrar.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("perfil.jsp");
         dispatcher.forward( req, resp);
     }
-    
-
 }
